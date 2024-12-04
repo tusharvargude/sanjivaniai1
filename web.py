@@ -86,9 +86,9 @@ if feature == "Generate Content":
     topic = st.text_area("Enter the topic or key details for the content:")
     if st.button("Generate Content"):
         with st.spinner("Generating content..."):  # Loader spinner
-            prompt = f"Create an admissions content focused on Sanjivani Group of Institutes and Sanjivani University: {topic}"
+            prompt = f"Create an content focused on Sanjivani Group of Institutes and Sanjivani University: {topic}"
             result = generate_google_content(prompt)
-            st.text_area("Generated Admissions Content", result, height=200)
+            st.text_area("Generated Content", result, height=200)
 
 elif feature == "Create Social Media Post":
     st.subheader("Social Media Post Generator")
@@ -97,7 +97,7 @@ elif feature == "Create Social Media Post":
         with st.spinner("Generating content..."):  # Loader spinner
             prompt = f"Write a social media post about Sanjivani Group of Institutes and Sanjivani University for event: {event}"
             result = generate_google_content(prompt)
-            st.text_area("Generated Post", result, height=200)
+            st.text_area("Generated Content for Post", result, height=200)
 
 elif feature == "Generate Ideas for Content Creation":
     st.subheader("Ideas for Content Creation")
